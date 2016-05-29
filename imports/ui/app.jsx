@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Meteor } from 'meteor/meteor';
 import { createContainer } from 'meteor/react-meteor-data';
 
-// App component - represents the whole app
+// App component
 class App extends Component {
   constructor(props, context) {
       super(props, context);
