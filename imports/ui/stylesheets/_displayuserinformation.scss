@@ -1,0 +1,35 @@
+.more-information { /* Wrapper for information */
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.horizontal-line {
+  width: 100%;
+  border-bottom: 2px solid $primary-color;
+}
+.full-name {
+  width: 100%;
+  font-size: 0.8rem;
+  font-weight: $font-bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.rank {
+  width: 100%;
+  margin: 10px;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: $font-bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.rank-text {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  font-weight: $font-light;
+  text-align: center;
+  text-transform: uppercase;
+}

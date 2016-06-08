@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import InputField from './InputField';
 
 // LoginForm component
 export default class LoginForm extends Component {
@@ -8,15 +9,15 @@ export default class LoginForm extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    console.log(event.target.firstname.value, event.target.lastname.value);
+    alert(event.target.firstname.value + ' && ' + event.target.lastname.value);
   }
 
   render() {
     return (
-      <form onSubmit={ this.handleSubmit }>
-          <input type="text" name="firstname" placeholder="Vorname" />
-          <input type="text" name="lastname" placeholder="Nachname" />
-          <input type="submit" name="submit-name" />
+      <form onSubmit={ this.handleSubmit } className="input-form">
+          <InputField type="text" name="firstname" placeholder="Vorname" />
+          <InputField type="text" name="lastname" placeholder="Nachname" />
+          <input type="submit" name="submit-name" value="Anmelden" />
       </form>
     );
   }

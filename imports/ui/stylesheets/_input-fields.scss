@@ -1,0 +1,47 @@
+::-webkit-input-placeholder {
+  color: $primary-color;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: $primary-color;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: $primary-color;
+}
+
+:-ms-input-placeholder {
+  color: $primary-color;
+}
+
+.input-field { /* Wrapper for every Input Field */
+  display: flex;
+  width: 100%;
+}
+
+input:not([type]),
+input[type=text],
+input[type=number] { /* Standart Input field */
+  width: 100%;
+  padding: 15px;
+  background-color: transparent;
+  color: $primary-color;
+  border: 2px solid $primary-color;
+  border-radius: 0;
+  outline: none;
+  font-weight: 300;
+  transition: all .3s;
+}
+
+input[type=submit] { /* Bold Button */
+  margin: 50px;
+  padding: 1rem 3rem;
+  border: 0;
+  background-color: white;
+  font-size: 1.3rem;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+}
+#firstname {
+  border-bottom: 0;
+}

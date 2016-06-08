@@ -1,13 +1,17 @@
 /*** Colors ***/
-$primary-color: #008cba; // bondi blue
-$secondary-color: #cf515f; // chestnut rose
-$text-color: #333333; // mine shaft
-$text-color-light: #ffffff; // white
+$primary-color: #fff; // white
+$secondary-color: #ff8f00; // orange
 
-$background-color: #F4F5F8; // athens grey
+$success-color: #4caf50; // green
+$error-color: #f44336; // red
+
+$background-color: #000; // black
 
 /*** Fonts ***/
 $primary-font: 'Roboto', sans-serif;
+$font-size-base: 2rem;
+$font-light: 200;
+$font-bold: 600;
 
 /*** Global ***/
 // Media Query Ranges

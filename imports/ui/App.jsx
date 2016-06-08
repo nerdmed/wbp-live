@@ -2,7 +2,9 @@ import React, { Component, PropTypes } from 'react';
 import { Meteor } from 'meteor/meteor';
 import { createContainer } from 'meteor/react-meteor-data';
 
-import LoginForm from './user/LoginForm.jsx';
+import LoginForm from './user/LoginForm';
+import Navigation from './user/Navigation';
+import DisplayUserInformation from './user/DisplayUserInformation';
 
 // App component
 class App extends Component {
@@ -13,18 +15,13 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <nav>
-          <h1>WBP Live</h1>
-        </nav>
+        <Navigation />
         <main>
           <LoginForm />
-          <div className="more-information">
-            <h3>Marc Nitzsche</h3>
-            <h3>1001. Platz</h3>
-            </div>
+          <DisplayUserInformation name="Marc Nitzsche" rank="211" from="315" />
         </main>
         <footer>
-          <p>Copyright 2016 Wer besiegt Paul?</p>
+          © 2016 Wer besiegt Paul?
         </footer>
       </div>
     );
