@@ -3,7 +3,7 @@ import { Meteor } from 'meteor/meteor';
 import { createContainer } from 'meteor/react-meteor-data';
 
 import LoginForm from './user/LoginForm';
-import Navigation from './user/Navigation';
+import Heading from './user/Heading';
 import DisplayUserInformation from './user/DisplayUserInformation';
 
 // App component
@@ -15,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <Navigation />
+        <Heading />
         <main>
           <LoginForm />
           <DisplayUserInformation name="Marc Nitzsche" rank="211" from="315" />
