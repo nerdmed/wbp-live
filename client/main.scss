@@ -8,8 +8,9 @@
 
 // Components
 @import "{}/imports/ui/stylesheets/global";
-@import "{}/imports/ui/stylesheets/input-fields";
-@import "{}/imports/ui/stylesheets/heading";
-@import "{}/imports/ui/stylesheets/maincontent";
-@import "{}/imports/ui/stylesheets/footer";
-@import "{}/imports/ui/stylesheets/displayuserinformation";
+
+@import "{}/imports/ui/stylesheets/modules/input-fields";
+@import "{}/imports/ui/stylesheets/modules/heading";
+@import "{}/imports/ui/stylesheets/modules/maincontent";
+@import "{}/imports/ui/stylesheets/modules/footer";
+@import "{}/imports/ui/stylesheets/modules/displayuserinformation";
