@@ -1,13 +1,15 @@
 .heading {
+  margin-bottom: 10px;
+  border: 0;
+  border-bottom: 2px solid $primary-color;
+  background-color: $secondary-color;
+}
+.heading-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
-  padding: 5%;
-  border: 0;
-  border-bottom: 2px solid $primary-color;
-  background-color: $secondary-color;
+  margin: 5% 0;
 }
 .pokal {
   margin-bottom: 10px;
