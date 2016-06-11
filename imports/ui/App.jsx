@@ -10,16 +10,18 @@ class App extends Component {
   constructor(props, context) {
       super(props, context);
       this.state = { // For debugging
-        appstate: 'login',
+        appstate: 'waiting',
       };
     };
-
+  setMyState() {
+    this.setState({appstate: 'login'});
+  }
   render() {
     return (
       <div className="container">
         <Heading />
         <MainView appstate={ this.state.appstate } />
-        <footer>© 2016 Wer besiegt Paul?</footer>
+        <footer onClick={ this.setMyState.bind(this) }>© 2016 Wer besiegt Paul?</footer>
       </div>
     );
   }

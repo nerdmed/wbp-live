@@ -9,7 +9,9 @@ export default class LoginForm extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    alert(event.target.firstname.value + ' && ' + event.target.lastname.value);
+    console.log(event.target.firstname.value, event.target.lastname.value);
+    event.target.firstname.value = '';
+    event.target.lastname.value = '';
   }
 
   render() {

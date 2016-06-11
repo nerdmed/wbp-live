@@ -14,7 +14,7 @@ export default class DisplayUserInformation extends Component {
         <div className="horizontal-line" />
 
         <h2 className="rank">{ this.props.rank } / { this.props.from }</h2>
-        <h3 className="rank-text">Rang</h3>
+        <h3 className="rank-text">Platz</h3>
 
         <div className="horizontal-line" />
       </div>
@@ -23,4 +23,7 @@ export default class DisplayUserInformation extends Component {
 }
 
 DisplayUserInformation.propTypes = {
+  name: React.PropTypes.string.isRequired,
+  rank: React.PropTypes.number.isRequired,
+  from: React.PropTypes.number.isRequired,
 };
