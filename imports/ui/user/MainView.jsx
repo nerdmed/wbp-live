@@ -15,31 +15,15 @@ export default class MainView extends Component {
     switch (this.props.appstate) {
       case 'login':
         return (
-          <ReactCSSTransitionGroup
-          transitionName="main-view"
-          component="main"
-          transitionAppear={true}
-          transitionAppearTimeout={1000}
-          transitionEnterTimeout={1000}
-          transitionLeaveTimeout={1000}>
-            <LoginForm key={ '' + Math.random() }/>
-          </ReactCSSTransitionGroup>
+          <LoginForm/>
         );
       break;
       case 'waiting':
         return (
-          <ReactCSSTransitionGroup
-          transitionName="main-view"
-          component="main"
-          transitionAppear={true}
-          transitionAppearTimeout={1000}
-          transitionEnterTimeout={1000}
-          transitionLeaveTimeout={1000}>
-            <div className="waiting" key={ '' + Math.random() }>
-              <WaitingMessage />
-              <DisplayUserInformation name="Marc Nitzsche" rank={ 12 } from={ 100 } />
-            </div>
-          </ReactCSSTransitionGroup>
+          <div className="waiting">
+            <WaitingMessage />
+            <DisplayUserInformation name="Marc Nitzsche" rank={ 12 } from={ 100 } />
+          </div>
         );
       break;
       case 'active':
@@ -52,7 +36,19 @@ export default class MainView extends Component {
   };
 
   render() {
-    return this.displayMain();
+    return (
+        <ReactCSSTransitionGroup
+        transitionName="main-view"
+        component="main"
+        transitionAppear={true}
+        transitionAppearTimeout={1000}
+        transitionEnterTimeout={1000}
+        transitionLeaveTimeout={1000}>
+          <div className='main-wrapper' key={ '' + Math.random() }>
+            {this.displayMain()}
+          </div>
+      </ReactCSSTransitionGroup>
+    )
   }
 }
 
