@@ -3,6 +3,7 @@
   border: 0;
   border-bottom: 2px solid $primary-color;
   background-color: $secondary-color;
+  overflow: hidden;
 }
 .heading-wrapper {
   display: flex;
@@ -24,4 +25,12 @@
   margin: 0;
   font-weight: $font-light;
   text-transform: uppercase;
+}
+.nav-view-appear {
+  opacity: 0;
+  animation: slideUp 1.5s cubic-bezier(.55,0,.1,1);
+}
+
+.nav-view-appear .nav-view-appear-active {
+  opacity: 1;
 }

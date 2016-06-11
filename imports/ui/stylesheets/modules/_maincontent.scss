@@ -11,3 +11,30 @@ main {
   align-items: center;
   flex-grow: 1;
 }
+
+.main-view-enter {
+  opacity: 0;
+  animation: slideIn 1s;
+}
+
+.main-view-enter .main-view-enter-active {
+  opacity: 1;
+}
+
+.main-view-leave {
+  opacity: 1;
+  animation: slideOut 1s cubic-bezier(.55,0,.1,1);
+}
+
+.main-view-leave .main-view-leave-active {
+  opacity: 0;
+  transition: all 0.3s;
+}
+.main-view-appear {
+  opacity: 0;
+  animation: slideDown 1s cubic-bezier(.55,0,.1,1);
+}
+
+.main-view-appear .main-view-appear-active {
+  opacity: 1;
+}
